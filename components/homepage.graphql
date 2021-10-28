@@ -1,0 +1,10 @@
+query HomePage($title: String) {
+  books {
+    title
+    author
+  }
+  movies(title: $title) {
+    title
+    director
+  }
+}
