@@ -82,18 +82,16 @@ const resolvers: Resolvers = {
   },
 };
 
-// The ApolloServer constructor requires two parameters: your schema
-// definition and your set of resolvers.
 const server = new ApolloServer({ typeDefs, resolvers });
 
 await server.start();
+
+const handler = server.createHandler({ path: '/api/graphql' });
 
 export const config = {
   api: {
     bodyParser: false,
   },
 };
-
-const handler = server.createHandler({ path: '/api/graphql' });
 
 export default handler;

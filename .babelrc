@@ -1,0 +1,5 @@
+// TODO: Delete this file when Next 12 rust compiler has ported @babel/plugin-syntax-top-level-await.
+{
+  "presets": ["next/babel"]
+  // "plugins": ["@babel/plugin-syntax-top-level-await"]
+}
