@@ -1,5 +1,5 @@
 {
-  "name": "auth-practice-ts",
+  "name": "next-apollo-prisma-starter",
   "version": "0.1.0",
   "prisma": {
     "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
